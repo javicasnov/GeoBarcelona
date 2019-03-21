@@ -1,0 +1,74 @@
+<meta charset="utf-8" />
+<html>
+<head>
+<title>GeoBarcelona - Ajuda</title>
+<style>
+body {
+    font:13.34px helvetica,arial,freesans,clean,sans-serif;
+    color:black;
+    line-height:1.4em;
+    background-color: #F8F8F8;
+    padding: 0.7em;
+}
+pre {
+    margin:1em 0;
+    font-size:12px;
+    background-color:#eee;
+    border:1px solid #ddd;
+    padding:5px;
+    line-height:1.5em;
+    color:#444;
+    overflow:auto;
+    -webkit-box-shadow:rgba(0,0,0,0.07) 0 1px 2px inset;
+    -webkit-border-radius:3px;
+    -moz-border-radius:3px;border-radius:3px;
+}
+pre code {
+    padding:0;
+    font-size:12px;
+    background-color:#eee;
+    border:none;
+}
+code {
+    font-size:12px;
+    background-color:#f8f8ff;
+    color:#444;
+    padding:0 .2em;
+    border:1px solid #dedede;
+}
+</style>
+</head>
+<body>
+<h1 id="geobarcelona-plugin">Plugin GeoBarcelona</h1>
+<br>
+<p><strong><em>GeoBarcelona</em></strong> permet cercar i fer zoom a qualsevol adreça de la ciutat de Barcelona, utilitzant el servei web RESTful "GeoBcn" <a href="https://w33.bcn.cat/GeoBcn">(https://w33.bcn.cat/GeoBcn)</a> proporcionat per l'Ajuntament de Barcelona.</p>
+<br>
+<h2>Com utilitzar-ho</h2>
+
+<ul>
+<li><p>Versió reduida dins la <strong>barra de cerca de QGIS</strong>, permetent fer una cerca ràpida d'adreça.</p></li>
+<p><div style="text-align:center"><img src="help/locator1.png" alt="GeoBarcelona Plugin"></div></p>
+<p>Un cop s'ha fet doble clic o s'ha pressionat Enter, el mapa fa zoom a l'adreça mostrant un punt blau durant 15 segons.</p>
+<p><div style="text-align:center"><img src="help/locator2.png" alt="GeoBarcelona Plugin"></div></p>
+<br>
+<li><p>Versió completa en panell. Permet cercar qualsevol adreça amb diferents nivells de zoom.</p>
+<p><div style="text-align:center"><img src="help/menu.png" alt="GeoBarcelona Plugin">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="help/panel.png" alt="GeoBarcelona Plugin"></div></p>
+<p>Un cop es mostren els resultats, es pot triar entre tres nivells de zoom diferents fent doble clic o pressionant Enter a la respectiva columna del resultat desitjat:</p>
+<ul>
+<li><p>Nivell Adreça. Primera columna. El mapa es centra al voltant de l'adreça seleccionada mostrant un punt blau.</p></li>
+<p><div style="text-align:center"><img src="help/menu1.png" alt="GeoBarcelona Plugin">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="help/locator2.png" alt="GeoBarcelona Plugin"></div></p>
+<li><p>Nivell Districte. Segona columna. El mapa es centra al voltant del districte de l'adreça seleccionada, mostrant un punt blau i els limits del districte.</p></li>
+<p><div style="text-align:center"><img src="help/menu2.png" alt="GeoBarcelona Plugin">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="help/map2.png" alt="GeoBarcelona Plugin"></div></p>
+<li><p>Nivell Barri. Tercera columna. El mapa es centra al voltant del barri de l'adreça seleccionada, mostrant un punt blau i els limits del barri.</p></li>
+<p><div style="text-align:center"><img src="help/menu3.png" alt="GeoBarcelona Plugin">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="help/map3.png" alt="GeoBarcelona Plugin"></div></p>
+</ul>
+</ul>
+
+<br>
+<h2>Especificacions i limitacions del servei web RESTful "GeoBcn"</h2>
+<ul>
+<li><p>SRC. Tota la informació es proporcionada en ETRS89/UTM zone 31N (EPSG:25831). GeoBarcelona fa la conversió al SRC del projecte.</p></li>
+<li><p>Resultats. Una consulta retorna un màxim de 25 resultats.</p></li>
+
+</body>
+</html>
