@@ -1,34 +1,25 @@
-# This file contains metadata for your plugin. Since 
-# version 2.0 of QGIS this is the proper way to supply 
-# information about a plugin. The old method of 
-# embedding metadata in __init__.py will 
-# is no longer supported since version 2.0.
+# This file contains plugin's metadata.
 
 # This file should be included when you package your plugin.
 # Mandatory items:
 
 [general]
 name=GeoBarcelona
-qgisMinimumVersion=3.0
+qgisMinimumVersion=3.10
 description=Search and zoom to any address in Barcelona city
-version=1.0
+version=2.0
 author=Javier Casado
 email=javicasnov@hotmail.com
 
-about= GeoBarcelona allows to search and zoom to any address in Barcelona city, using the RESTful web service "GeoBcn" (https://w33.bcn.cat/GeoBcn) provided by the Barcelona City Council.
-    Two ways of use:
-    •	Reduced version within the QGIS Locator bar, allowing a quick address search.
-    •	Full version in a docked panel. Allows to search any address with different zoom levels. More features coming.
-    
-    GeoBarcelona permet cercar i fer zoom a qualsevol adreça de la ciutat de Barcelona, utilitzant el servei web RESTful "GeoBcn" (https://w33.bcn.cat/GeoBcn) proporcionat per l'Ajuntament de Barcelona.
-    Dues formes d'utilitzar-lo:
-    •	Versió reduida dins la barra de cerca de QGIS, permetent fer una cerca ràpida d'adreça.
-    •	Versió completa en panell. Permet cercar qualsevol adreça amb diferents nivells de zoom. Està previst afegir-hi mes funcionalitats.
-    
-    GeoBarcelona permite buscar y hacer zoom a cualquier dirección de la ciudad de Barcelona, utilizando el servicio web RESTful "GeoBcn" (https://w33.bcn.cat/GeoBcn) proporcionado por el Ayuntamiento de Barcelona.
-    Dos formas de uso:
-    •	Versión reducida dentro de la barra de búsqueda de QGIS, permitiendo una búsqueda rápida de dirección.
-    •	Versión completa en panel. Permite buscar cualquier dirección con diferentes niveles de zoom. Está previsto añadir mas funcionalidades.
+about= <div>GeoBarcelona allows to search and zoom to any address in Barcelona city, using the RESTful web service "GeoBcn" (https://w33.bcn.cat/GeoBcn) provided by the Barcelona City Council. Two ways of use:
+    <ul style="margin:0;"><li style="margin-bottom:-1em;">Reduced version within the QGIS Locator bar, allowing a quick address search.</li>
+    <li>Full version in a docked panel. Allows to search any address by name or by distance from a point clicked at map canvas. The results are displayed with different viewing and downloading options. More features coming.</li></ul>
+    GeoBarcelona permet cercar i fer zoom a qualsevol adreça de la ciutat de Barcelona, utilitzant el servei web RESTful "GeoBcn" (https://w33.bcn.cat/GeoBcn) proporcionat per l'Ajuntament de Barcelona. Dues formes d'utilitzar-lo:
+    <ul style="margin:0;"><li style="margin-bottom:-1em;">Versió reduida dins la barra de cerca de QGIS, permetent fer una cerca ràpida d'adreça.</li>
+    <li>Versió completa en panell integrat. Permet cercar qualsevol adreça per nom o per distància a un punt clicat al mapa. Els resultats es mostren amb diferents opcions de visualització i descàrrega. Està previst afegir-hi més funcionalitats.</li></ul>
+    GeoBarcelona permite buscar y hacer zoom a cualquier dirección de la ciudad de Barcelona, utilizando el servicio web RESTful "GeoBcn" (https://w33.bcn.cat/GeoBcn) proporcionado por el Ayuntamiento de Barcelona. Dos formas de uso:
+    <ul style="margin:0;"><li style="margin-bottom:-1em;">Versión reducida dentro de la barra de búsqueda de QGIS, permitiendo una búsqueda rápida de dirección.</li>
+    <li>Versión completa en panel integrado. Permite buscar cualquier dirección por nombre o por distancia a un punto clicado en el mapa. Los resultados se muestran con diferentes opciones de visualización y descarga. Está previsto añadir más funcionalidades.</li></ul></div>
 
 tracker=https://github.com/javicasnov/GeoBarcelona/issues
 repository=https://github.com/javicasnov/GeoBarcelona
@@ -38,13 +29,21 @@ repository=https://github.com/javicasnov/GeoBarcelona
 # Recommended items:
 
 # Uncomment the following line and add your changelog:
-# changelog=
+changelog= Version 2.0 (June 2022)
+    - Added reverse address search tab, allowing searching addresses by cliking on canvas.
+    - Added the possibility to export results to layer.
+    - Added the possibility to link from an address to different complementary web services.
+    - Code and UI improvements.
+    - Bug fixes.
+
+    Version 1.0 (March 2019)
+    - Initial release.
 
 # Tags are comma separated with spaces allowed
-tags=geocoder, geocoding, locator, filter, barcelona, catalunya, spain, españa, api, rest, restful, webservice, search, address, location, adreça, direccion, buscador, cercador, calle, street, carrer, zoom
+tags=geocoder,reverse,inversa,geocoding,locator,filter,barcelona,catalunya,spain,españa,api,rest,restful,webservice,search,address,location,adreça,direccion,buscador,cercador,calle,street,carrer,zoom
 
 homepage=https://github.com/javicasnov/GeoBarcelona
-icon=icon.png
+icon=resources/icons/icon_geobarcelona_full.png
 # experimental flag
 experimental=False
 

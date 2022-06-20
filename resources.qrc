@@ -1,7 +1,0 @@
-<RCC>
-    <qresource prefix="/plugins/geobarcelona" >
-        <file>icon.png</file>
-        <file>help.png</file>
-        <file>about.png</file>
-    </qresource>
-</RCC>
